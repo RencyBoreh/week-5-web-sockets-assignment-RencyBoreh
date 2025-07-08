@@ -1,0 +1,111 @@
+/* General layout */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.chat-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Login screen */
+.login input {
+  padding: 10px;
+  margin-right: 10px;
+  width: 60%;
+}
+
+.login button {
+  padding: 10px 20px;
+}
+
+/* Chat box */
+.chat-box h2 {
+  margin-top: 0;
+}
+
+/* User list */
+.user-list {
+  margin-bottom: 10px;
+}
+
+.user-list button {
+  margin: 2px;
+  padding: 5px 10px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.user-list button:hover {
+  background: #ddd;
+}
+
+.user-list button.active {
+  background: #007bff;
+  color: white;
+}
+
+.user-list button.clear {
+  background: #dc3545;
+  color: white;
+}
+
+/* Messages */
+.messages {
+  height: 300px;
+  overflow-y: scroll;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #fafafa;
+}
+
+.message {
+  margin-bottom: 8px;
+}
+
+.message.private {
+  background: #f0f8ff;
+  padding: 5px;
+  border-left: 4px solid #007bff;
+  border-radius: 4px;
+}
+
+/* System messages */
+.system {
+  color: gray;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+/* Typing indicator */
+.typing {
+  font-style: italic;
+  color: gray;
+  margin-bottom: 5px;
+}
+
+/* Input area */
+.input-area {
+  display: flex;
+  gap: 10px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+}
+
+.input-area button {
+  padding: 10px 20px;
+}
